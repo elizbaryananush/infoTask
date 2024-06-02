@@ -24,9 +24,10 @@
 <style lang="scss" scoped>
 .todos {
   grid-column: 2 / 3;
+  grid-row: span 2;
   background-color: white;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 300px;
+  // height: 300px;
   display: flex;
   flex-direction: column;
   gap: 10px;

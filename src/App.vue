@@ -1,7 +1,12 @@
 <script setup>
 import RemindersPartVue from "./Components/TodosPart.vue";
 import WeatherPartVue from "./Components/WeatherPart.vue";
-import NotesPartVue from "./Components/NotesPart.vue"
+import NotesPartVue from "./Components/NotesPart.vue";
+import WatchPartVue from "./Components/WatchPart.vue";
+import TimerPartVue from "./Components/TimerPart.vue";
+import WaterPartVue from "./Components/WaterPart.vue";
+import MoodPartVue from "./Components/MoodPart.vue";
+import MusicPartVue from "./Components/MusicPart.vue";
 </script>
 
 <template>
@@ -10,6 +15,11 @@ import NotesPartVue from "./Components/NotesPart.vue"
       <WeatherPartVue />
       <RemindersPartVue />
       <NotesPartVue />
+      <WatchPartVue />
+      <TimerPartVue />
+      <MoodPartVue />
+      <WaterPartVue />
+      <MusicPartVue />
     </main>
   </div>
 </template>
@@ -42,7 +52,6 @@ li{
 
   .main {
     width: 100%;
-    // height: 100%;
     background: linear-gradient(
       45deg,
       rgba(255, 255, 255, 0.3) 0%,
@@ -54,8 +63,10 @@ li{
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
     gap: 20px;
-    grid-auto-rows: minmax(550px, auto);
+    // grid-auto-rows: minmax(100px, auto);
+    // grid-template-rows: auto;
 
     & > div {
       background-color: rgba(0, 0, 0, 0.4);
@@ -71,10 +82,6 @@ li{
       }
     }
   }
-}
-
-.app {
-
 }
 
 .app::before {

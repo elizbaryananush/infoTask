@@ -2,6 +2,7 @@
 
 <template>
   <div class="notes">
+    <h6>Notes</h6>
     <button class="plus">+</button>
     <div class="note">
       <p class="title">Hello!</p>
@@ -13,8 +14,13 @@
 <style lang="scss" scoped>
 .notes {
   grid-column: 3/4;
-  grid-row: 1 / 2;
+  // height: 500px;
+  grid-row: span 4;
   position: relative;
+
+  h6{
+    margin-bottom: 10px;
+  }
 
   button {
     position: absolute;
