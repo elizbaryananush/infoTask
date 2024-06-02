@@ -7,6 +7,10 @@ const hours = ref("00");
 const minutes = ref("00");
 const seconds = ref("00");
 
+const change = () => {
+  inchvoraya.value = true
+}
+
 const submit = () => {
   if (
     hours.value == "00" &&
@@ -79,7 +83,7 @@ const stop = () => {
   <div class="timer">
     <div class="top">
       <h6>Timer</h6>
-      <p @click="stop">Change Goal</p>
+      <p @click="change">Change Goal</p>
     </div>
     <div class="content">
       <div class="bigRound">
